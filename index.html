@@ -81,6 +81,13 @@
         }
         .download-section {
             text-align: center;
+            margin-top: 2rem;
+        }
+        .linkedin-icon {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
@@ -94,8 +101,6 @@
     <div class="menu">
         <a href="CV_2023.pdf">Curriculum Vitae</a>
         <a href="personale.html">Informazioni Personali</a>
-   
-        <!-- Aggiungi altre sezioni qui se necessario -->
     </div>
 
     <div class="container">
@@ -111,30 +116,26 @@
         <!-- Inserisci qui le informazioni personali -->
     </section>
 
-    <section id="other-section">
-        <h2>Altra Sezione</h2>
-        <!-- Inserisci qui il contenuto della tua altra sezione -->
-    </section>
-
-    <section class="download-section" id="cv-download" style="margin-top: 2rem;">
+    <section class="download-section" id="cv-download">
         <h2>Curriculum Vitae</h2>
         <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>qui</a>.</p>
     </section>
 
-    <!-- Aggiungi altre sezioni qui se necessario -->
-
     <footer>
         <p>&copy; 2023 Niccolò Fruncillo</p>
     </footer>
+
+    <div class="linkedin-icon">
+        <script>
+            const favicon = new Favico("linkedin");
+        </script>
+    </div>
 
     <script>
         $(document).ready(function() {
             $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn">LinkedIn</a>');
             $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
         });
-
-        const favicon = new Favico("🚀");
-        // Puoi sostituire l'emoji "🚀" con l'URL di un'icona personalizzata
     </script>
 </body>
 
