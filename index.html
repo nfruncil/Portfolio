@@ -5,65 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
+    <script src="https://unpkg.com/favicon.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* lo stesso stile CSS precedente */
-        .menu {
-            text-align: center;
-            background-color: #333;
-            padding: 10px;
-        }
-        .menu a {
-            color: white;
-            padding: 14px 25px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .menu a:hover {
-            background-color: #777;
-        }
+        /* il tuo stile CSS rimane invariato */
     </style>
 </head>
 
 <body>
     <header>
-        <!-- lo stesso contenuto dell'header precedente -->
+        <h1>Nome Cognome</h1>
+        <p>Web Developer</p>
+        <div id="social-links">
+            <a href="link_del_tuo_profilo_LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="link_del_tuo_account_Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
     </header>
 
-    <div class="menu">
-        <a href="#cv-preview">Curriculum Vitae</a>
-        <a href="#personal-info">Informazioni Personali</a>
-        <a href="#other-section">Altra Sezione</a>
-        <!-- Aggiungi qui altre sezioni se necessario -->
-    </div>
-
     <div class="container">
-        <!-- Inserisci il tuo contenuto del portfolio qui -->
+        <!-- Il resto del tuo codice HTML rimane invariato -->
     </div>
 
-    <section id="cv-preview" style="text-align: center; margin-top: 2rem;">
-        <!-- lo stesso contenuto dell'iframe precedente -->
+    <section id="cv-download">
+        <h2>Curriculum Vitae</h2>
+        <p>Puoi scaricare il mio curriculum in formato PDF <a href="link_al_tuo_file.pdf" download>qui</a>.</p>
     </section>
-
-    <section id="personal-info" style="text-align: center; margin-top: 2rem;">
-        <h2 style="font-size: 1.5rem;">Informazioni Personali</h2>
-        <!-- Inserisci qui le informazioni personali -->
-    </section>
-
-    <section id="other-section" style="text-align: center; margin-top: 2rem;">
-        <h2 style="font-size: 1.5rem;">Altra Sezione</h2>
-        <!-- Inserisci qui il contenuto della tua altra sezione -->
-    </section>
-
-    <!-- Aggiungi altre sezioni qui se necessario -->
 
     <footer>
-        <!-- lo stesso contenuto del footer precedente -->
+        <p>&copy; 2023 Nome Cognome</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        /* lo stesso script jQuery precedente */
+        $(document).ready(function() {
+            $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn">LinkedIn</a>');
+            $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
+        });
+
+        const favicon = new Favico("🚀");
+        // Puoi sostituire l'emoji "🚀" con l'URL di un'icona personalizzata
     </script>
 </body>
 
