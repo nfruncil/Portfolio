@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
@@ -17,19 +16,23 @@
             padding: 0;
             line-height: 1.6;
         }
+
         header {
             background-color: #343a40;
             color: #fff;
             text-align: center;
             padding: 2rem 0;
         }
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
+
         p {
             margin: 0;
         }
+
         .container {
             max-width: 800px;
             margin: auto;
@@ -38,17 +41,21 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
+
         section {
             margin-bottom: 2rem;
             text-align: center;
         }
+
         a {
             color: #007bff;
             text-decoration: none;
         }
+
         a:hover {
             color: #0056b3;
         }
+
         footer {
             background-color: #343a40;
             color: #fff;
@@ -58,17 +65,13 @@
             bottom: 0;
             width: 100%;
         }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-        
+
         .menu {
             text-align: center;
             background-color: #343a40;
             padding: 10px;
         }
+
         .menu a {
             color: #fff;
             padding: 14px 25px;
@@ -76,19 +79,26 @@
             display: inline-block;
             transition: background-color 0.3s;
         }
+
         .menu a:hover {
             background-color: #555;
         }
+
         .download-section {
             text-align: center;
             margin-top: 2rem;
         }
+
         .linkedin-icon {
-            position: fixed;
-            bottom: 20px;
             text-align: center;
-            width: 100%;
+            margin-top: 20px;
         }
+
+        .linkedin-icon img {
+            width: 30px;
+            height: 30px;
+        }
+
         button {
             display: block;
             margin: 20px auto;
@@ -124,8 +134,8 @@
     </div>
 
     <section id="cv-preview">
-        <!-- lo stesso contenuto dell'iframe precedente -->
-        <button onclick="goBack()" style="display: block; margin: 20px auto;">Torna alla Pagina Precedente</button>
+        <!-- Il tuo contenuto dell'anteprima del CV qui -->
+        <button onclick="goBack()">Torna alla Pagina Precedente</button>
     </section>
 
     <section id="personal-info">
@@ -140,24 +150,21 @@
 
     <footer>
         <p>&copy; 2023 Niccolò Fruncillo</p>
-        <a href="link_del_tuo_profilo_LinkedIn"><img src="logo_linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
-     
+        <div class="linkedin-icon">
+            <a href="link_del_tuo_profilo_LinkedIn"><img src="logo_linkedin.png" alt="LinkedIn"></a>
+        </div>
     </footer>
 
-    <div class="linkedin-icon">
-        <script>
-            const favicon = new Favico("linkedin");
-        </script>
-    </div>
-
     <script>
-        $(document).ready(function() {
-            $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn">LinkedIn</a>');
-            $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
-        });
+        const favicon = new Favico("linkedin");
     </script>
 
     <script>
+        $(document).ready(function() {
+            $("#linkedin").append('<a href="https://www.linkedin.com/feed/">LinkedIn</a>');
+            $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
+        });
+
         function goBack() {
             window.history.back();
         }
