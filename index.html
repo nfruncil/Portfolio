@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
@@ -5,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
+        
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
@@ -102,3 +106,54 @@
             background-color: #0056b3;
         }
     </style>
+</head>
+
+<body>
+    <header>
+        <h1>Niccolò Fruncillo</h1>
+        <p>Studente</p>
+    </header>
+
+    <div class="menu">
+        <a href="CV_2023.pdf">Curriculum Vitae</a>
+        <a href="personale.html">Informazioni Personali</a>
+    </div>
+
+    <div class="container">
+        <!-- Inserisci il tuo contenuto del portfolio qui -->
+    </div>
+
+    <section id="cv-preview">
+        <!-- lo stesso contenuto dell'iframe precedente -->
+        <button onclick="goBack()" style="display: block; margin: 20px auto;">Torna alla Pagina Precedente</button>
+    </section>
+
+    <section id="personal-info">
+        <h2>Informazioni Personali</h2>
+        <!-- Inserisci qui le informazioni personali -->
+    </section>
+
+    <section class="download-section" id="cv-download">
+        <h2>Curriculum Vitae</h2>
+        <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>qui</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Niccolò Fruncillo</p>
+        <div class="linkedin-icon" id="linkedin"></div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn"><img src="percorso_del_tuo_logo_linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>');
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+
+        const favicon = new Favico("linkedin");
+    </script>
+</body>
+
+</html>
