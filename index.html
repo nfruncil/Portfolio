@@ -125,6 +125,7 @@
 
     <section id="cv-preview">
         <!-- lo stesso contenuto dell'iframe precedente -->
+        <button onclick="goBack()" style="display: block; margin: 20px auto;">Torna alla Pagina Precedente</button>
     </section>
 
     <section id="personal-info">
@@ -153,14 +154,12 @@
             $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
         });
     </script>
-    <button onclick="goBack()">Torna alla Pagina Precedente</button>
 
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
-
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 
 </html>
