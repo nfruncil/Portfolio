@@ -11,19 +11,21 @@
     <style>
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background-color: #343a40;
             color: #fff;
             text-align: center;
             padding: 2rem 0;
         }
         h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
         p {
             margin: 0;
@@ -32,19 +34,22 @@
             max-width: 800px;
             margin: auto;
             padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
         section {
             margin-bottom: 2rem;
         }
         a {
-            color: #333;
+            color: #007bff;
             text-decoration: none;
         }
         a:hover {
-            color: #777;
+            color: #0056b3;
         }
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
@@ -60,24 +65,25 @@
         
         .menu {
             text-align: center;
-            background-color: #333;
+            background-color: #343a40;
             padding: 10px;
         }
         .menu a {
-            color: white;
+            color: #fff;
             padding: 14px 25px;
             text-decoration: none;
             display: inline-block;
+            transition: background-color 0.3s;
         }
         .menu a:hover {
-            background-color: #777;
+            background-color: #555;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <!-- lo stesso contenuto dell'header precedente -->
+        <h1>Il mio Portfolio</h1>
     </header>
 
     <div class="menu">
@@ -91,17 +97,17 @@
         <!-- Inserisci il tuo contenuto del portfolio qui -->
     </div>
 
-    <section id="cv-preview" style="text-align: center; margin-top: 2rem;">
+    <section id="cv-preview">
         <!-- lo stesso contenuto dell'iframe precedente -->
     </section>
 
-    <section id="personal-info" style="text-align: center; margin-top: 2rem;">
-        <h2 style="font-size: 1.5rem;">Informazioni Personali</h2>
+    <section id="personal-info">
+        <h2>Informazioni Personali</h2>
         <!-- Inserisci qui le informazioni personali -->
     </section>
 
-    <section id="other-section" style="text-align: center; margin-top: 2rem;">
-        <h2 style="font-size: 1.5rem;">Altra Sezione</h2>
+    <section id="other-section">
+        <h2>Altra Sezione</h2>
         <!-- Inserisci qui il contenuto della tua altra sezione -->
     </section>
 
@@ -113,7 +119,7 @@
     <!-- Aggiungi altre sezioni qui se necessario -->
 
     <footer>
-          <p>&copy; 2023 Niccolò Fruncillo</p>
+        <p>&copy; 2023 Niccolò Fruncillo</p>
     </footer>
 
     <script>
