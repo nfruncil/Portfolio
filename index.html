@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +8,57 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* il tuo stile CSS rimane invariato */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #777;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
-
 <body>
     <header>
-        <h1>Nome Cognome</h1>
-        <p>Web Developer</p>
-        <div id="social-links">
-            <a href="link_del_tuo_profilo_LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="link_del_tuo_account_Telegram"><i class="fab fa-telegram"></i></a>
+        <h1 style="font-size: 2.5rem;">Nome Cognome</h1>
+        <p style="font-size: 1.2rem;">Web Developer</p>
+        <div id="social-links" style="margin-top: 1rem;">
+            <a href="link_del_tuo_profilo_LinkedIn" style="margin-right: 1rem; color: #fff;"><i class="fab fa-linkedin"></i></a>
+            <a href="link_del_tuo_account_Telegram" style="color: #fff;"><i class="fab fa-telegram"></i></a>
         </div>
     </header>
 
@@ -27,9 +66,9 @@
         <!-- Il resto del tuo codice HTML rimane invariato -->
     </div>
 
-    <section id="cv-download">
-        <h2>Curriculum Vitae</h2>
-        <p>Puoi scaricare il mio curriculum in formato PDF <a href="link_al_tuo_file.pdf" download>qui</a>.</p>
+    <section id="cv-download" style="text-align: center; margin-top: 2rem;">
+        <h2 style="font-size: 1.5rem;">Curriculum Vitae</h2>
+        <p style="font-size: 1rem;">Scarica il mio curriculum in formato PDF <a href="link_al_tuo_file.pdf" download style="color: #333; font-weight: bold;">qui</a>.</p>
     </section>
 
     <footer>
@@ -46,5 +85,4 @@
         // Puoi sostituire l'emoji "🚀" con l'URL di un'icona personalizzata
     </script>
 </body>
-
 </html>
