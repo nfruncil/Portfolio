@@ -54,6 +54,23 @@ h1 {
     color: #333;
 }
 
+         button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
     </style>
 </head>
 
@@ -71,6 +88,14 @@ h1 {
             <!-- Aggiungi altre informazioni qui se necessario -->
         </div>
     </div>
+    <button onclick="goBack()">Torna alla Pagina Precedente</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
 </body>
 
 </html>
