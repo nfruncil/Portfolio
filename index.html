@@ -9,102 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        p {
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        section {
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #0056b3;
-        }
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-        
-        .menu {
-            text-align: center;
-            background-color: #343a40;
-            padding: 10px;
-        }
-        .menu a {
-            color: #fff;
-            padding: 14px 25px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .menu a:hover {
-            background-color: #555;
-        }
-        .download-section {
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .linkedin-icon {
-            position: fixed;
-            bottom: 20px;
-            text-align: center;
-            width: 100%;
-        }
-        button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1rem;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
+        /* Il tuo stile CSS qui */
     </style>
 </head>
 
@@ -140,27 +45,19 @@
 
     <footer>
         <p>&copy; 2023 Niccolò Fruncillo</p>
-        <a href="link_del_tuo_profilo_LinkedIn"><img src="logo_linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
-     
+        <div class="linkedin-icon" id="linkedin"></div>
     </footer>
-
-    <div class="linkedin-icon">
-        <script>
-            const favicon = new Favico("linkedin");
-        </script>
-    </div>
 
     <script>
         $(document).ready(function() {
-            $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn">LinkedIn</a>');
-            $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
+            $("#linkedin").append('<a href="link_del_tuo_profilo_LinkedIn"><img src="percorso_del_tuo_logo_linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>');
         });
-    </script>
 
-    <script>
         function goBack() {
             window.history.back();
         }
+
+        const favicon = new Favico("linkedin");
     </script>
 </body>
 
