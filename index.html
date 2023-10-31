@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Aggiorna il CSS qui */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
@@ -127,60 +126,82 @@
 
 <body>
     <header>
-        <h1>Niccolò Fruncillo</h1>
-        <p>Perito Informatico</p>
-        <div class="circular">
-    <img src="ciao.png" alt="Immagine circolare">
-</div>
+        <h1>Il mio Portfolio</h1>
+    </header>
 
-<div class="menu">
-    <a href="CV_2023.pdf">Anteprima Curriculum Vitae</a>
-    <a href="personale.html">Informazioni Personali</a>
-    <a href="CV_2023.pdf">Scarica Curriculum Vitae</a>
-</div>
-
-<div class="container">
-    <section id="cv-preview">
-        <h2>Anteprima Curriculum Vitae</h2>
-        <p>Sono un studente di informatica e mi occupo di sviluppare software per la gestione di dati. Ho una buona esperienza nella programmazione e ho utilizzato diversi linguaggi di programmazione, tra cui Java, Python e C++. Sono anche un ottimo fan della sicurezza informatica e della crittografia.</p>
-        <button onclick="goBack()">Torna alla Pagina Precedente</button>
-    </section>
-
-    <section id="personal-info">
-        <h2>Informazioni Personali</h2>
-        <p>Nome: Niccolò Fruncillo</p>
-        <p>Età: 21</p>
-        <p>Residenza: Milano, Italia</p>
-        <p>Email: niccolò.fruncillo@studenti.unimi.it</p>
-        <p>Sito Personale: <a href="https://nicco.link">nicco.link</a></p>
-    </section>
-
-    <section class="download-section" id="cv-download">
-        <h2>Scarica Curriculum Vitae</h2>
-        <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>qui</a>.</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2023 Niccolò Fruncillo</p>
-    <div class="linkedin-icon">
-        <a href="https://www.linkedin.com/feed/"><img src="logo_linkedin.png" alt="LinkedIn"></a>
+    <div class="menu">
+        <a href="#cv-preview">Anteprima Curriculum Vitae</a>
+        <a href="personale.html">Informazioni Personali</a>
+        <a href="#cv-download">Scarica Curriculum Vitae</a>
     </div>
-</footer>
 
-<script>
-    const favicon = new Favico("linkedin");
-</script>
+    <div class="container">
+        <section id="cv-preview">
+            <h2>Anteprima Curriculum Vitae</h2>
+            <p>Sono uno studente di informatica e mi occupo dello sviluppo software per la gestione dei dati. Ho una buona esperienza di programmazione e ho lavorato con diversi linguaggi, inclusi Java, Python e C++. Sono appassionato di sicurezza informatica e crittografia.</p>
+            <button onclick="goBack()">Torna alla Pagina Precedente</button>
+        </section>
 
-<script>
-    $(document).ready(function() {
-        $("#linkedin").append('<a href="https://www.linkedin.com/feed/">LinkedIn</a>');
-        $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
-    });
+        <section id="personal-info">
+            <h2>Informazioni Personali</h2>
+            <p>Nome: Niccolò Fruncillo</p>
+            <p>Età: 21</p>
+            <p>Residenza: Milano, Italia</p>
+            <p>Email: niccolò.fruncillo@studenti.unimi.it</p>
+            <p>Sito Personale: <a href="https://nicco.link">nicco.link</a></p>
+        </section>
 
-    function goBack() {
-        window.history.back();
-    }
-</script>
-    </body>
+        <section class="download-section" id="cv-download">
+            <h2>Scarica Curriculum Vitae</h2>
+            <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>cliccando qui</a>.</p>
+            <button onclick="showDescription()">Scopri di più</button>
+        </section>
+
+        <div class="description" id="description">
+            <h2>Chi sono</h2>
+            <p>Sono un appassionato di informatica e mi piace creare software per la gestione di dati. Ho una buona esperienza nella programmazione e ho utilizzato diversi linguaggi di programmazione, tra cui Java, Python e C++. Sono anche un ottimo fan della sicurezza informatica e della crittografia.</p>
+            <button onclick="hideDescription()">Torna alla Anteprima Curriculum Vitae</button>
+        </div>
+
+        <div class="circular">
+            <img src="ciao.png" alt="Immagine circolare">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Niccolò Fruncillo</p>
+        <div class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/niccolo-fruncillo-82858822b/"><img src="https://cdn4.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script>
+        const favicon = new Favico({
+            type: 'rectangle',
+            animation: 'pop',
+            bgColor: '#343a40',
+            textColor: '#fff',
+            fontFamily: 'Arial',
+            fontSize: '16px',
+            fontStyle: 'bold',
+            fontWeight: 'bold',
+            text: 'N'
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function showDescription() {
+            const description = document.getElementById("description");
+            description.style.display = "block";
+        }
+
+        function hideDescription() {
+            const description = document.getElementById("description");
+            description.style.display = "none";
+        }
+    </script>
+</body>
+
 </html>
