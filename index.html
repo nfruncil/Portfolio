@@ -30,7 +30,7 @@
         p {
             margin: 0;
         }
-        .container {
+       .container {
             max-width: 800px;
             margin: auto;
             padding: 2rem;
@@ -58,30 +58,34 @@
             bottom: 0;
             width: 100%;
         }
-        .menu {
+       .menu {
             text-align: center;
             background-color: #343a40;
             padding: 10px;
         }
-        .menu a {
+       .menu a {
             color: #fff;
             padding: 14px 25px;
             text-decoration: none;
             display: inline-block;
             transition: background-color 0.3s;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
         }
-        .menu a:hover {
+       .menu a:hover {
             background-color: #555;
         }
-        .download-section {
+       .download-section {
             text-align: center;
             margin-top: 2rem;
         }
-        .linkedin-icon {
+       .linkedin-icon {
             text-align: center;
             margin-top: 20px;
         }
-        .linkedin-icon img {
+       .linkedin-icon img {
             width: 30px;
             height: 30px;
         }
@@ -89,7 +93,9 @@
             display: block;
             margin: 20px auto;
             padding: 10px 20px;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -110,50 +116,53 @@
     </header>
 
     <div class="menu">
-        <a href="CV_2023.pdf">Curriculum Vitae</a>
-        <a href="personale.html">Informazioni Personali</a>
+        <a href="#cv-preview">Anteprima Curriculum Vitae</a>
+        <a href="#personal-info">Informazioni Personali</a>
+        <a href="#cv-download">Scarica Curriculum Vitae</a>
     </div>
 
     <div class="container">
-        <!-- Inserisci il tuo contenuto del portfolio qui -->
-    </div>
-
-    <section id="cv-preview">
-        <!-- Il tuo contenuto dell'anteprima del CV qui -->
-        <button onclick="goBack()">Torna alla Pagina Precedente</button>
-    </section>
-
-    <section id="personal-info">
-        <h2>Informazioni Personali</h2>
-        <!-- Inserisci qui le informazioni personali -->
-    </section>
-
-    <section class="download-section" id="cv-download">
-        <h2>Curriculum Vitae</h2>
-        <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>qui</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Niccolò Fruncillo</p>
-        <div class="linkedin-icon">
-            <a href="https://www.linkedin.com/feed/"><img src="logo_linkedin.png" alt="LinkedIn"></a>
+        <section id="cv-preview">
+            <h2>Anteprima Curriculum Vitae</h2>
+            <p>Sono uno studente</p>
+            <section id="personal-info">
+                <h2>Informazioni Personali</h2>
+                <p>Nome: Niccolò Fruncillo</p>
+                <p>Età: 21</p>
+                <p>Residenza: Milano, Italia</p>
+                <p>Email: niccolò.fruncillo@studenti.unimi.it</p>
+                <p>Sito Personale: <a href="https://nicco.link">nicco.link</a></p>
+            </section>
+        
+            <section class="download-section" id="cv-download">
+                <h2>Scarica Curriculum Vitae</h2>
+                <p>Puoi scaricare il mio curriculum in formato PDF <a href="CV_2023.pdf" download>qui</a>.</p>
+            </section>
         </div>
-    </footer>
-
-    <script>
-        const favicon = new Favico("linkedin");
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $("#linkedin").append('<a href="https://www.linkedin.com/feed/">LinkedIn</a>');
-            $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
-        });
-
-        function goBack() {
-            window.history.back();
-        }
-    </script>
-</body>
-
+        
+        <footer>
+            <p>&copy; 2023 Niccolò Fruncillo</p>
+            <div class="linkedin-icon">
+                <a href="https://www.linkedin.com/feed/"><img src="logo_linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </footer>
+        
+        <script>
+            const favicon = new Favico("linkedin");
+        </script>
+        
+        <script>
+            $(document).ready(function() {
+                $("#linkedin").append('<a href="https://www.linkedin.com/feed/">LinkedIn</a>');
+                $("#telegram").append('<a href="link_del_tuo_account_Telegram">Telegram</a>');
+            });
+        
+            function goBack() {
+                window.history.back();
+            }
+        </script>  
+    
+            
+</body>  
+        
 </html>
