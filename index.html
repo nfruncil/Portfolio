@@ -29,25 +29,7 @@
         p {
             margin: 0;
         }
-            footer {
-        background-color: #343a40;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin-top: 10px; /* Modifica l'altezza della barra */
-        height: 10px; /* Modifica l'altezza della barra */
-    }
-    .linkedin-icon {
-        text-align: center;
-        margin-top: 5px; /* Modifica il margine superiore */
-    }
-    .linkedin-icon img {
-        height: 30px; /* Modifica l'altezza dell'immagine */
-    }
-      .container {
+        .container {
             max-width: 800px;
             margin: auto;
             padding: 2rem;
@@ -66,13 +48,12 @@
         a:hover {
             color: #0056b3;
         }
-       
-      .menu {
+        .menu {
             text-align: center;
             background-color: #343a40;
             padding: 10px;
         }
-      .menu a {
+        .menu a {
             color: #fff;
             padding: 14px 25px;
             text-decoration: none;
@@ -83,10 +64,10 @@
             text-transform: uppercase;
             border-radius: 5px;
         }
-      .menu a:hover {
+        .menu a:hover {
             background-color: #555;
         }
-      .download-section {
+        .download-section {
             text-align: center;
             margin-top: 2rem;
         }
@@ -107,7 +88,7 @@
         button:hover {
             background-color: #0056b3;
         }
-       .circular {
+        .circular {
             border-radius: 50%;
             width: 200px;
             height: 200px;
@@ -115,13 +96,20 @@
             margin: 20px auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-       .circular img {
+        .circular img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-       .circular:hover {
+        .circular:hover {
             transform: scale(1.1);
+        }
+        .linkedin-icon {
+            text-align: center;
+            margin-top: 5px;
+        }
+        .linkedin-icon img {
+            height: 30px;
         }
     </style>
 </head>
@@ -131,6 +119,7 @@
         <h1>Niccolò Fruncillo</h1>
         <div class="circular">
             <img src="ciao.png" alt="Immagine circolare">
+        </div>
     </header>
 
     <div class="menu">
@@ -144,8 +133,6 @@
             <p>Sono uno studente di informatica e mi occupo dello sviluppo software per la gestione dei dati. Ho una buona esperienza di programmazione e ho lavorato con diversi linguaggi, inclusi Java, Python e C++. Sono appassionato di sicurezza informatica e crittografia.</p>
             <button onclick="goBack()">Torna alla Pagina Precedente</button>
         </section>
-
-     
 
         <section class="download-section" id="cv-download">
             <h2>Scarica Curriculum Vitae</h2>
@@ -161,13 +148,11 @@
 
     </div>
 
-   <footer style="background-color: #343a40; color: #fff; text-align: center; padding: 1rem 0; position: fixed; bottom: 0; width: 100%; margin-top: 150px; height: 50px;">
-    <div class="linkedin-icon" style="text-align: center; margin-top: 5px;">
-        <a href="https://www.linkedin.com/in/niccol%C3%B2-fruncillo-0b7056271/"><img src="https://cdn4.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" style="height: 30px;"></a>
-    </div>
-</footer>
-
-
+    <footer style="background-color: #343a40; color: #fff; text-align: center; padding: 1rem 0; position: fixed; bottom: 0; width: 100%; margin-top: 150px; height: 50px;">
+        <div class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/niccol%C3%B2-fruncillo-0b7056271/"><img src="https://cdn4.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" style="height: 30px;"></a>
+        </div>
+    </footer>
 
     <script>
         const favicon = new Favico({
