@@ -29,6 +29,24 @@
         p {
             margin: 0;
         }
+            footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-top: 20px; /* Modifica l'altezza della barra */
+        height: 50px; /* Modifica l'altezza della barra */
+    }
+    .linkedin-icon {
+        text-align: center;
+        margin-top: 5px; /* Modifica il margine superiore */
+    }
+    .linkedin-icon img {
+        height: 30px; /* Modifica l'altezza dell'immagine */
+    }
       .container {
             max-width: 800px;
             margin: auto;
@@ -48,15 +66,7 @@
         a:hover {
             color: #0056b3;
         }
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+       
       .menu {
             text-align: center;
             background-color: #343a40;
@@ -79,14 +89,6 @@
       .download-section {
             text-align: center;
             margin-top: 2rem;
-        }
-      .linkedin-icon {
-            text-align: center;
-            margin-top: 20px;
-        }
-      .linkedin-icon img {
-            width: 30px;
-            height: 30px;
         }
         button {
             display: block;
@@ -166,12 +168,13 @@
 
     </div>
 
-    <footer>
-        <p>&copy; 2023 Niccolò Fruncillo</p>
-        <div class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/niccolo-fruncillo-82858822b/"><img src="https://cdn4.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"></a>
-        </div>
-    </footer>
+   <footer style="background-color: #343a40; color: #fff; text-align: center; padding: 1rem 0; position: fixed; bottom: 0; width: 100%; margin-top: 20px; height: 50px;">
+    <p style="margin-bottom: 0;">&copy; 2023 Niccolò Fruncillo</p>
+    <div class="linkedin-icon" style="text-align: center; margin-top: 5px;">
+        <a href="https://www.linkedin.com/in/niccolo-fruncillo-82858822b/"><img src="https://cdn4.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" style="height: 30px;"></a>
+    </div>
+</footer>
+
 
     <script>
         const favicon = new Favico({
