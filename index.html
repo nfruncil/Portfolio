@@ -172,6 +172,55 @@
         .description button:hover {
             background-color: #0056b3;
         }
+
+        .accordion-item {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+          }
+          
+          .accordion-header {
+            padding: 0.75rem 1.25rem;
+          }
+          
+          .accordion-button {
+            background-color: #f8f9fa;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            width: 100%;
+          }
+          
+          .accordion-collapse {
+            padding: 0.75rem 1.25rem;
+          }
+
+
+          .link-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        
+        .link-button:hover {
+            background-color: #45a049;
+        }
+
+        .link-button {
+            /* Altre regole di stile */
+            display: block; /* Imposta il display come blocco */
+            margin: 0 auto; /* Imposta i margini a 0 e auto per centrare il pulsante */
+        }
+        
+          
         
         
     </style>
@@ -238,6 +287,93 @@
             <p>Sono un appassionato di informatica e mi piace creare software per la gestione di dati. Ho una buona esperienza nella programmazione e ho utilizzato diversi linguaggi di programmazione, tra cui Java, Python e C++. Sono anche un grande appassionato di sicurezza informatica e crittografia.</p>
             <button onclick="hideDescription()">Torna all'Anteprima</button>
         </div>
+
+        <!--titolo-->
+
+
+        <div class="container">
+            <h1 class="text-center title">Attività Svolte</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- Aggiungi il codice per le fisarmoniche qui -->
+            </div>
+
+        <!--fisarmoniche-->
+
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Lavoro 1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Questo è stato il lavoro eseguito con GitHub, creando una pagina HTML completa e accattivante.
+                        <form action="https://github.com/nfruncil/Portfolio">
+                            <input type="submit" value="GitHub" class="link-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                       Lavoro 2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Nel contesto di questa attività professionale, abbiamo eseguito una serie di scansioni mirate su un obiettivo determinato con l'obiettivo di approfondirne il funzionamento e identificare eventuali criticità potenziali.
+                  
+                           
+
+                          <!--carosello-->
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="ehi1.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ehi.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="ehi3.png" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                       Lavoro 3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+                            <input type="submit" value="Link 3" class="link-button">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         
         
 
@@ -277,6 +413,8 @@
     description.style.display = "none";
         }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
